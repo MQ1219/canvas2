@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_517136_mlat10memr2ro1or.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/Palette.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<header>
+    <ul class="option">
+        <li id="save" class="iconfont"><a href="">&#xe602;</a></li>
+        <li id="newCanvas" class="iconfont">&#xe6a2;</li>
+        <li id="back" class="iconfont">&#xe62f;</li>
+        <li id="clear" class="iconfont">&#xe833;</li>
+    </ul>
+    <ul class="shape">
+        <li id="line" title="直线"><i class="iconfont">&#xe606;</i></li>
+        <li id="dash" title="虚线"><i class="iconfont">&#xe667;</i></li>
+        <li id="pencil" title="铅笔"><i class="iconfont">&#xe601;</i></li>
+        <li id="circle" title="圆形"><i class="iconfont">&#xe605;</i></li>
+        <li id="rect" title="矩形"><i class="iconfont">&#xe619;</i></li>
+        <li id="ploy" title="多边形"><i class="iconfont">&#xe62a;</i></li>
+        <li id="ployJ" title="多角形"><i class="iconfont">&#xe612;</i></li>
+        <li id="eraser" title="橡皮擦"><i class="iconfont">&#xe6c5;</i></li>
+    </ul>
+    <ul class="style">
+        <li id="fill" class="styleBtn"><i class="iconfont">&#xe649;</i></li>
+        <li id="stroke" class="styleBtn"><i class="iconfont">&#xe6ab;</i></li>
+        <li><i class="iconfont san">&#xe61b;</i></li>
+        <li id="font" class="fontBtn styleBtn"><i class="iconfont">&#xe615;</i></li>
+        <li><input type="color" id="fillStyle" class="colorstyle" value="#000000"></li>
+        <li><input type="color" id="strokeStyle" class="colorstyle" value="#000000"></li>
+        <li><input type="number" value="1"></li>
+        <li id="cilp" class="clipBtn styleBtn cilp"><i class="iconfont">&#xe600;</i></li>
+    </ul>
+
+</header>
+<section>
+    <canvas width="1263" height="519"></canvas>
+    <div class="eraser"></div>
+    <div class="mask"></div>
+    <div class="clip">
+    </div>
+</section>
+</body>
+</html>

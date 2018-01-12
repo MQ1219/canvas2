@@ -1,0 +1,139 @@
+::selection {
+    background: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    color: #000;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+header ul {
+    padding: 0 5px;
+    background-color: #ffffff;
+}
+
+header .option {
+    width: 125px;
+}
+
+header .shape {
+    width: 250px;
+    margin-left:30px;
+}
+
+header .style {
+    width: 300px;
+    margin-left:30px;
+}
+
+header ul li {
+    float: left;
+    width: 50px;
+    height: 38px;
+    margin: 8px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 38px;
+}
+header ul li:hover{
+    cursor: pointer;
+}
+header ul li .iconfont{
+    font-size: 24px;
+}
+.active {
+    border: 1px solid #6f68ff !important;
+}
+
+.canvasStyle {
+    border: 2px solid #6f68ff;
+    float: left;
+}
+
+section {
+    width: 100%;
+    height: calc(100% - 120px);
+    position: relative;
+    top: 0;
+    left: 0;
+    /*margin: 10px;*/
+}
+
+section canvas {
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    height: 95%;
+    border: none;
+}
+
+input[type='number'] {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 8px;
+}
+
+select {
+    width: 100%;;
+    height: calc(100%);
+    font-size: 12px;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.eraser {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #e6e6e6;
+    display: none;
+}
+
+.clip {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #8c8c8c;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 99;
+}
+.style .iconfont.san{
+    font-size: 4px;
+}
+input{
+    outline: none;
+}
